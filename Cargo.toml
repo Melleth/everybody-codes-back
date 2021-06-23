@@ -10,9 +10,13 @@ edition = "2018"
 clap = "2.33.3"
 csv = "1.1.6"
 serde = { version = "1.0.126", features = ["derive"] }
+rocket = "0.5.0-rc.1"
+
+[[bin]]
+name = "backend"
+path = "src/main.rs"
 
 [[bin]]
 name = "search"
 path = "src/search.rs"
-test = true
 
