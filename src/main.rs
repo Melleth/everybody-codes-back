@@ -33,7 +33,7 @@ fn cameras() -> Vec<u8> {
             .output()
             .expect("failed to execute search.exe")
     } else {
-        Command::new("./search")
+        Command::new("./target/debug/search")
             .output()
             .expect("failed to execute search")
     };
